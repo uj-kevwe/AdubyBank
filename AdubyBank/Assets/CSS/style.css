@@ -1,0 +1,171 @@
+#body{
+	background-color: darkred;
+	color: white;
+	margin: 20px;
+}
+#welcome{
+	position: fixed;
+	top: 5%;
+	right: 20px;
+	margin-right: 20px;
+}
+#logo{
+	position: fixed;
+	top: 5%;
+	left: 55%;
+}
+#logo img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+#login-form{
+	padding-top: 80px;
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	right: 30%;
+	bottom: 10%;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: black;
+}
+.formgroup{
+	margin-left: 10%;
+	width: 80%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 2;
+}
+.formgroup input[type=text], .formgroup input[type=password],#kycStaff,#tableoutput{
+	float: right;
+	width: 60%;
+	height: 30px;
+}
+.formgroup input[type=submit]{
+	background-color: blue;
+	color: white;
+	width: 40%;
+	height: 30px;
+	margin-left: 30%;
+	border: none;
+
+}
+#genacct{
+	border-style: none;
+}
+#dashboard{
+	position: fixed;
+	top: 23%;
+	bottom: 5%;
+	width: 95%;
+	height: 450px;
+	background-color: white;
+	color: blue;
+	border-style: ridge;
+	border-color: grey;
+	padding-bottom: 10px;
+}
+.desktop_modules{
+	background-color: darkgrey;
+	width: 30%;
+	height: 450px;
+	float: left;
+}
+.contents{
+	background-color: white;
+	width: 70%;
+	height: 450px;
+	padding-bottom: 10px;
+	float: right;
+	overflow-y: scroll;
+
+}
+.contents form{
+	overflow-x: ;
+}
+#fgroup{
+	display: none;
+}
+.formgroup label{
+	width: 40%;
+}
+.formgroup input, .formgroup select{
+	width: 60%;
+	float: right;
+}
+#mobile_menu{
+	background-color: white;
+	color: black;
+	width: 20px;
+	height: 20px;
+	padding: 1px;
+	cursor: pointer;
+	display: none;
+}
+#mobile_menu i{
+	font-size: 20px;
+}
+#desktop_view, #acct_module, #admin, #trxns {
+	list-style-type: none;
+}
+#acct_module, #admin, #trxns{
+	display: none;
+}
+li{
+	cursor: pointer;
+	width: 40%;
+	margin: 10px;
+}
+.acct_details h3{
+	margin-left: 50px;
+}
+#statement table,tr,th,td{
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+#accountclosure{
+	margin-left: 20px;
+}
+
+#closethisaccount{
+	display: none;
+}
+@media screen and (max-width: 900px){
+	#welcome, #logo{
+		float: none;
+		text-align: center;
+	}
+	#login-form{
+		left: 5%;
+		right: 5%;
+	}
+	.formgroup input[type=text], .formgroup input[type=password], #tableoutput{
+		width: 100%;
+	}
+	.formgroup input[type=submit]{
+		margin-top: 20px ;
+	}
+	#welcome{
+		top:130px;
+	}
+	#logo{
+		left: 40%;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	#desktop_view{
+		display: none;
+	}
+	#dashboard{
+		top: 30%;
+		width: 90%;
+	}
+	li{
+		width: 80%;
+	}
+}
